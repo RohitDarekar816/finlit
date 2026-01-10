@@ -11,9 +11,6 @@ services:
       CORS_ORIGIN: https://taxai.afintrix.com
     expose:
       - "5000"
-    depends_on:
-      mongodb:
-        condition: service_healthy
     volumes:
       - backend_finlit:/app/uploads
     networks:
