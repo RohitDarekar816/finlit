@@ -7,7 +7,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: 5000
-      MONGODB_URI: mongodb://root:kbvyznK0x5jH35fQrv6pK9JjoVj3a0jQkN6jgldT1dXf916ASKKqTz2kek9lkWP8@t4o80cs8kwgok0w408sos08k:27017/default?authSource=admin
+      MONGODB_URI: mongodb://root:kbvyznK0x5jH35fQrv6pK9JjoVj3a0jQkN6jgldT1dXf916ASKKqTz2kek9lkWP8@t4o80cs8kwgok0w408sos08k:27017/default?authSource=root
       CORS_ORIGIN: https://taxai.afintrix.com
     expose:
       - "5000"
