@@ -56,7 +56,7 @@ services:
     container_name: finlit-frontend
     restart: unless-stopped
     environment:
-      VITE_BACKEND_URL: http://backend:5000
+      VITE_BACKEND_URL: http://finlit-backend:5000
       VITE_APP_ENV: production
     expose:
       - "80"
