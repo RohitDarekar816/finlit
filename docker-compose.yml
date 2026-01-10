@@ -14,7 +14,7 @@ services:
     volumes:
       - backend_finlit:/app/uploads
     networks:
-      - t4o80cs8kwgok0w408sos08k
+      - proxy
     healthcheck:
       test:
         [
@@ -42,7 +42,7 @@ services:
       backend:
         condition: service_healthy
     networks:
-      - t4o80cs8kwgok0w408sos08k
+      - proxy
     healthcheck:
       test:
         [
@@ -59,5 +59,5 @@ services:
       start_period: 40s
 
 networks:
-  t4o80cs8kwgok0w408sos08k:
+  proxy:
     external: true
