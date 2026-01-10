@@ -2,7 +2,6 @@
 node_modules/
 __pycache__/
 *.py[cod]
-.env
 
 # Build outputs
 dist/
@@ -38,7 +37,6 @@ ml/sample_transactions.csv
 ml/error_log.txt
 
 # Misc
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -51,3 +49,4 @@ backend/uploads/*
 frontend/.vite/
 frontend/dist/
 frontend/.env
+config.bat

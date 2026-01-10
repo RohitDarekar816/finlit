@@ -12,7 +12,7 @@ services:
       - "27017"
     volumes:
       - mongodb_data:/data/db
-      - /root/finlit/backend/init.js:/docker-entrypoint-initdb.d/init.js:ro
+      - ./backend/init.js:/docker-entrypoint-initdb.d/init.js:ro
     networks:
       - proxy
     healthcheck:
@@ -23,7 +23,8 @@ services:
       start_period: 40s
   # Backend API
   backend:
-    image: rohitdarekar816/finlit:latest
+    build:
+      context: ./backend
     container_name: finlit-backend
     restart: unless-stopped
     environment:
@@ -69,16 +70,20 @@ services:
       test:
         [
           "CMD",
-          "wget",
-          "--no-verbose",
-          "--tries=1",
-          "--spider",
-          "http://localhost/",
+          "curl",
+          "-f",
+          "http://127.0.0.1/",
         ]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 40s
+
+volumes:
+  mongodb_data:
+    driver: local
+  backend_finlit:
+    driver: local
 
 networks:
   proxy:
