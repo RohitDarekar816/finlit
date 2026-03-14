@@ -40,7 +40,7 @@ const Login = () => {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-6">
             <div className="w-8 h-8 bg-n-1 rounded-full"></div>
-            <span className="text-xl font-semibold">Finlit</span>
+            <span className="text-xl font-semibold">Afintrix</span>
           </div>
           <h1 className="text-2xl font-bold mb-2">Welcome back</h1>
           <p className="text-neutral-600">Please enter your details to sign in</p>

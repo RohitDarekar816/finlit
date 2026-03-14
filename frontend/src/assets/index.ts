@@ -1,6 +1,6 @@
 
-import favicon from '@/assets/favicon.svg';
-import favicon2 from '@/assets/favicon2.svg'
+import favicon from '@/assets/favicon.png';
+import favicon2 from '@/assets/favicon2.png'
 import reallogo from '@/assets/logo-no-background.svg'
 import heroBanner from '@/assets/hero-banner.png';
 import brand3 from '@/assets/brand-logo-3.svg';

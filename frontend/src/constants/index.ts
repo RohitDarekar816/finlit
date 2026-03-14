@@ -74,7 +74,7 @@ export const navMenu: MenuItem[] = [
         href: '#',
         icon: BetweenHorizonalEnd,
         label: 'AnalytiX Elements',
-        desc: 'Unstyled UI primitives for endless customization. Powered by AnalytiX',
+        desc: 'Unstyled UI primitives for endless customization. Powered by Afintrix',
       },
       {
         href: '#',
@@ -125,7 +125,7 @@ export const navMenu: MenuItem[] = [
 export const heroData = {
   sectionSubtitle: 'All in one Finance Hub',
   sectionTitle: 'The finance for Youth ',
-  decoTitle: 'FinLit',
+  decoTitle: 'Afintrix',
   sectionText:
     'Next-gen finance Knowledge: Gain valuable insights of finance and drive data-informed decision-making with our revolutionary platform.',
 };
@@ -386,7 +386,7 @@ export const footerData = {
       ],
     },
   ],
-  copyright: '© 2025 Finlit',
+  copyright: '© 2025 Afintrix',
   // socialLinks: [
   //   {
   //     href: 'https://x.com/codewithsadee_',

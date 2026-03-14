@@ -141,7 +141,7 @@ const NewHero = () => {
             ref={heroBannerRef}
             style={{ scale }}
           >
-            <img src={heroBanner} width={1468} height={815} alt="FinlitHero" />
+            <img src={heroBanner} width={1468} height={815} alt="AfintrixHero" />
           </motion.figure>
           <motion.div
             className="absolute bg-primary inset-5 blur-[50px] -z-10"
