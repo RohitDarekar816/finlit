@@ -60,8 +60,8 @@ services:
     environment:
       VITE_BACKEND_URL: ${VITE_BACKEND_URL}
       VITE_APP_ENV: ${VITE_APP_ENV}
-    ports:
-      - "80:80"
+    expose:
+      - "80"
     depends_on:
       backend:
         condition: service_healthy

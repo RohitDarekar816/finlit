@@ -37,10 +37,6 @@ ml/sample_transactions.csv
 ml/error_log.txt
 
 # Misc
-.env
-.env.development.local
-.env.test.local
-.env.production.local
 
 # Backend specific
 backend/uploads/*
