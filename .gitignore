@@ -37,7 +37,7 @@ ml/sample_transactions.csv
 ml/error_log.txt
 
 # Misc
-
+.env
 # Backend specific
 backend/uploads/*
 !backend/uploads/.gitkeep
