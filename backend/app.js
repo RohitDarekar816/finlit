@@ -1,7 +1,6 @@
 const express = require('express');
 const router = require('./routes/index');
 const cors = require('cors');
-const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const { Webhook } = require('svix');
 const { User } = require('./db'); // ✅ Import User model
@@ -9,12 +8,6 @@ const { User } = require('./db'); // ✅ Import User model
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 const app = express();
-
-// ✅ Connect to MongoDB
-mongoose
-  .connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('✅ Connected to MongoDB'))
-  .catch((err) => console.error('❌ MongoDB connection error:', err.message));
 
 app.use(cors());
 app.use('/v1', router);
